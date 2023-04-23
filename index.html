@@ -4,10 +4,23 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>SketchPad App</title>
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <h1>SketchPad</h1>
+    <div class="toolbar">
+      <button>new</button>
+      <button>undo</button>
+      <button>redo</button>
+      <button class="clear">clear</button>
+    </div>
+    <div>
+      <label for="student">Student :</label>
+      <input type="text" name="student" id="student" />
+    </div>
+    <div id="drwaContainer"></div>
+    <button class="download" id="download">download</button>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
